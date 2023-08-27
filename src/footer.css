@@ -1,0 +1,104 @@
+.all-footers{
+    margin-top: 10rem;
+    background-image: linear-gradient(rgba(5, 6, 82, 0.8),rgba(23, 2, 58, 0.8)),url('./image/footer.png');
+      
+    color: aliceblue;
+    
+}
+.foots{
+    display: inline-block;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+h3{
+    margin-left: 8rem;
+    font-size: 30px;
+}
+.foots a{
+    display: flex;
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+    color: rgb(29, 230, 230);
+    text-decoration: none;
+}
+.foots a:hover{
+    color: whitesmoke;
+    cursor: pointer;
+    transition: ease-in-out;
+    transform: scaleX(1);
+}
+
+ a:hover {
+	text-decoration: none;
+    letter-spacing: 3px;
+  
+  color: hsl(0, 0%, 100%);
+ 
+    /* .submit:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(169, 126, 248) 0px 7px 29px 0px;
+ }
+ 
+ .submit:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+ 
+  transform: translateY(10px);
+  transition: 100ms;
+ } */
+}
+a:active{
+    letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+ 
+  transform: translateY(10px);
+  transition: 100ms;
+}
+a .online{
+    align-items: center;
+}
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+    justify-content: center;
+}
+
+.socialbtns .fab {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 6px;
+    font-size: 20px;
+    color: rgb(226, 226, 233);
+    border: 1px solid rgb(226, 225, 230);
+    border-radius: 100%;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+    margin-right: 2rem;
+
+}
+
+.socialbtns .fab:hover {
+	color: #ffffff;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+.copyright{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+
