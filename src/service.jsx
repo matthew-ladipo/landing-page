@@ -1,3 +1,7 @@
+import React, {useEffect} from "react";
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
 import "./Service.css";
 import web from './image/web.jpg'
 import we2 from './image/we2.jpg'
@@ -11,15 +15,18 @@ import app from './image/app.jpg'
 
 
 const service = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000});
+ }, []);
   return (
     <>
-    <p>
+    <p data-aos="fade-up" >
      <h2>What Solutions We Provide</h2>
   <br /> <h4>our service</h4>
      </p>
-      <div className="all-cards">
+      <div className="all-cards" >
        
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <div class="card-details">
             <div className="service-image">
             <img src={web} alt="" />
@@ -32,7 +39,7 @@ const service = () => {
           </div>
           <button class="card-button">More info</button>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <div class="card-details">
           <div className="service-image">
             <img src={we2} alt="" />
@@ -45,7 +52,7 @@ const service = () => {
           </div>
           <button class="card-button">More info</button>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <div class="card-details">
           <div className="service-image">
             <img src={web3} alt="" />
@@ -60,8 +67,8 @@ const service = () => {
         </div>
       </div>
 
-      <div className="second-cards">
-        <div class="card">
+      <div className="second-cards" >
+        <div class="card" data-aos="fade-up">
           <div class="card-details">
           <div className="service-image">
             <img src={seo} alt="" />
@@ -74,7 +81,7 @@ const service = () => {
           </div>
           <button class="card-button">More info</button>
         </div>
-        <div class="card">
+        <div class="card"  data-aos="fade-up">
           <div class="card-details">
           <div className="service-image">
             <img src={ppc} alt="" />
@@ -87,7 +94,7 @@ const service = () => {
           </div>
           <button class="card-button">More info</button>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <div class="card-details">
           <div className="service-image">
             <img src={app} alt="" />

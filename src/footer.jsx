@@ -1,10 +1,16 @@
+import React, {useEffect} from "react";
+import Aos from 'aos'
+import "aos/dist/aos.css"
 import "./footer.css";
-import BackTotop from "./backTotop";
+// import BackTotop from "./backTotop";
 
 const footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000});
+ }, []);
   return (
     <>
-      <footer className="all-footers">
+      <footer className="all-footers" data-aos="fade-buttom" >
         <div>
           <div>
             <div className="foots">
@@ -66,7 +72,7 @@ const footer = () => {
             </div>
           </div>
         </div>
-        <BackTotop></BackTotop>
+        {/*  <BackTotop></BackTotop>  */}
       </footer>
      
     </>
